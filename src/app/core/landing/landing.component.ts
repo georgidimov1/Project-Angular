@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
 name = 'name';
 imageURL = 'imageURL';
-isAuth = 0;
-isArray = 1;
+isAuth = 1;
+isArray = 0;
 
   constructor() { }
 

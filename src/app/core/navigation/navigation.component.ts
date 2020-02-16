@@ -7,7 +7,7 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent implements OnInit {
-  isAuth = 0;
+  isAuth = 1;
   constructor() { }
 
   ngOnInit(): void {
