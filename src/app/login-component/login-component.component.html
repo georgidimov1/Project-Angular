@@ -1,25 +1,25 @@
-<form action="/login" method="post">
+<form routerLink="/login" #login="ngForm" (ngSubmit)="loginHandler(login.value)">
 
     <div class="text-center mb-4">
       <h1 class="h3 mb-3 font-weight-normal">Login</h1>
     </div>
 
     <div class="form-label-group">
-      <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required=""
+      <input ngModel name="username" type="text" class="form-control" placeholder="Username" required
         autofocus="">
-      <label for="inputUsername">Username</label>
+      <label>Username</label>
     </div>
 
     <div class="form-label-group">
-      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
-      <label for="inputPassword">Password</label>
+      <input ngModel name="password" type="password" class="form-control" placeholder="Password" required>
+      <label>Password</label>
     </div>
 
-    <button class="btn btn-lg btn-dark btn-block" type="submit">Sign In</button>
+    <button class="btn btn-lg btn-dark btn-block" [disabled]="login.invalid">Sign In</button>
 
     <div class="text-center mb-4">
       <p class="alreadyUser"> Don't have account? Then just
-        <a href="#">Sign-Up</a>!
+        <a routerLink="/register">Sign-Up</a>!
       </p>
     </div>
 

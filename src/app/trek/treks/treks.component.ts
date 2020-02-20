@@ -9,6 +9,12 @@ import Trak from 'src/app/models/traks';
 })
 export class TreksComponent implements OnInit {
 allTreks: Array<Trak>;
+name: string;
+description: string;
+dateTime: string;
+organizer: string;
+likes: string;
+
   constructor(private trekService: TrekService) { }
 
   ngOnInit(): void {

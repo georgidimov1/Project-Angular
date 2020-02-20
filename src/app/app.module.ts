@@ -13,6 +13,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateTrekComponent } from './create-trek/create-trek.component';
+import { FormsModule } from '@angular/forms';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -24,18 +26,20 @@ import { CreateTrekComponent } from './create-trek/create-trek.component';
     NotFoundComponent,
     LoginComponentComponent,
     RegisterComponent,
-    CreateTrekComponent
+    CreateTrekComponent,
+    LogoutComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     FlexLayoutModule,
     HttpClientModule,
     KinveyModule.init({
-      appKey: '<appKey>',
-      appSecret: '<appSecret>'
-    })
+      appKey: 'kid_HkP-y2r2S',
+      appSecret: '1372ee77d9ae420399fa410adc10084d',
+       })
     ],
   providers: [TrekService],
   bootstrap: [AppComponent]

@@ -7,10 +7,9 @@ import { Component, OnInit, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent implements OnInit {
-  isAuth = 1;
   constructor() { }
-
+  username = sessionStorage.username;
+  isAuth = sessionStorage.getItem('authtoken');
   ngOnInit(): void {
   }
-
 }

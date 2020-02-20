@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -8,12 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
 name = 'name';
 imageURL = 'imageURL';
-isAuth = 1;
+isAuth = sessionStorage.getItem('authtoken');
 isArray = 0;
-
-  constructor() { }
-
+  constructor() {
+  }
   ngOnInit(): void {
   }
-
-}
+  }
