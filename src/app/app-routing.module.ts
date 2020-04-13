@@ -4,7 +4,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateTrekComponent } from './create-trek/create-trek.component';
-import { LogoutComponent } from './logout/logout.component';
 import { LandingComponent } from './core/landing/landing.component';
 
 
@@ -23,11 +22,6 @@ const routes: Routes = [
     path: 'register',
     pathMatch: 'full',
     component: RegisterComponent
-  },
-  {
-    path: 'logout',
-    pathMatch: 'full',
-    component: LogoutComponent
   },
   {
     path: 'trekCreate',

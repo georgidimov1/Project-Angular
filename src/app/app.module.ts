@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
-import { TreksComponent } from 'src/app/trek/treks/treks.component';
 import { TrekService } from './services/trek.service';
 import { KinveyModule } from 'kinvey-angular-sdk';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -14,7 +13,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { RegisterComponent } from './register/register.component';
 import { CreateTrekComponent } from './create-trek/create-trek.component';
 import { FormsModule } from '@angular/forms';
-import { LogoutComponent } from './logout/logout.component';
+import { DataStoreComponent } from './data-store/data-store.component';
 
 
 
@@ -22,12 +21,11 @@ import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TreksComponent,
     NotFoundComponent,
     LoginComponentComponent,
     RegisterComponent,
     CreateTrekComponent,
-    LogoutComponent
+    DataStoreComponent
   ],
   imports: [
     FormsModule,
@@ -37,8 +35,8 @@ import { LogoutComponent } from './logout/logout.component';
     FlexLayoutModule,
     HttpClientModule,
     KinveyModule.init({
-      appKey: 'kid_HkP-y2r2S',
-      appSecret: '1372ee77d9ae420399fa410adc10084d',
+      appKey: 'kid_B12h6q1v8',
+      appSecret: '9606468fe04c4e07a6a5af489bde7baf',
        })
     ],
   providers: [TrekService],

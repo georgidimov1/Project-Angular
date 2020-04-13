@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TraksComponent } from './traks.component';
+import { DataStoreComponent } from './data-store.component';
 
-describe('TraksComponent', () => {
-  let component: TraksComponent;
-  let fixture: ComponentFixture<TraksComponent>;
+describe('DataStoreComponent', () => {
+  let component: DataStoreComponent;
+  let fixture: ComponentFixture<DataStoreComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TraksComponent ]
+      declarations: [ DataStoreComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TraksComponent);
+    fixture = TestBed.createComponent(DataStoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
