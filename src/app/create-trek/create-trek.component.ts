@@ -13,7 +13,7 @@ constructor(private trekService: TrekService, private router: Router){}
     let entity = {
       name: [data.location, data.dateTime, data.description, data.imageURL],
       likes: Number(0),
-      organizer: sessionStorage.userId
+      organizer: sessionStorage.username
     }
     this.trekService.save(entity)
     this.router.navigateByUrl('');

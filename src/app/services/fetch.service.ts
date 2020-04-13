@@ -7,15 +7,15 @@ import { DataStoreService } from 'kinvey-angular-sdk';
 export class FetchService {
 
   collection: any;
-  constructor(datastoreService: DataStoreService) {
-    this.collection = datastoreService.collection('treks');
+  constructor(datastoreService: DataStoreService, ) {
+    this.collection = datastoreService.collection('TREKKING');
   }
   find() {
     this.collection.find()
       .subscribe((entities) => {
-        console.log(entities);
+        
       }, (error) => {
-        // ...
+        console.log(error)
       }, () => {
         // ...
       });

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { DataStoreService } from 'kinvey-angular-sdk';
 
 @Component({
   selector: 'app-landing',
@@ -8,11 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 name = 'name';
-imageURL = 'imageURL';
 isAuth = sessionStorage.getItem('authtoken');
-isArray = 0;
-  constructor() {
+isArray: any;
+data;
+collection: any;
+entities: any;
+  constructor(private router: Router, datastoreService: DataStoreService) {
+    this.collection = datastoreService.collection('TREKKING');
   }
   ngOnInit(): void {
-  }
-  }
+    this.collection.find()
+    .subscribe((entities) => {
+     this.entities = entities;
+     this.isArray=this.entities
+    }, (error) => {
+      console.log(error)
+    }, () => {
+      // ...
+    });
+    }
+    }

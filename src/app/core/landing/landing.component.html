@@ -2,15 +2,18 @@
     <!-- <a>"това съдържаниe се показва ако е логнат потребителя"</a> -->
     <!-- {{#each treks}}
     {{!--това съдържаниe се показва ако е пълен масива recipes / нанасяме всички handlebars променливи Кинви--}} --> --> -->
-     <div id="treks-list" *ngIf="isArray">
+    <div  *ngIf="this.entities"> 
+     <div id="treks-list" *ngFor="let item of this.entities; index as i">
+       
         <a href="/getTrek" class="card overflow-hidden treksPlaceholder trek-details" style="width: 20rem; height: 18rem;">
         <div class="card-body">
-            <p class="card-text">{{name}}</p>
+            <p class="card-text">{{item.name[0]}}</p>
         </div>
-        <img class="card-image" src={{imageURL}}
+        <img class="card-image" src={{item.name[3]}}
             alt="Card image cap">
         </a>
      </div>
+    </div>
      <!-- {{else}} -->
     <div class="container" *ngIf="!isArray">
         <div class="row">
