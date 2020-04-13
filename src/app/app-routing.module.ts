@@ -5,7 +5,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { RegisterComponent } from './register/register.component';
 import { CreateTrekComponent } from './create-trek/create-trek.component';
 import { LandingComponent } from './core/landing/landing.component';
-
+import { DetailedTrekComponent } from '../app/detailed-trek/detailed-trek.component';
 
 const routes: Routes = [
   {
@@ -32,6 +32,11 @@ const routes: Routes = [
     path: 'trek',
     pathMatch: 'full',
     component: CreateTrekComponent
+  },
+  {
+    path: 'trekDetails/:productId',
+    pathMatch: 'full',
+    component: DetailedTrekComponent
   },
   {
     path: '**',

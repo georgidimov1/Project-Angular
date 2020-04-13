@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataStoreComponent } from './data-store.component';
+import { DetailedTrekComponent } from './detailed-trek.component';
 
-describe('DataStoreComponent', () => {
-  let component: DataStoreComponent;
-  let fixture: ComponentFixture<DataStoreComponent>;
+describe('DetailedTrekComponent', () => {
+  let component: DetailedTrekComponent;
+  let fixture: ComponentFixture<DetailedTrekComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DataStoreComponent ]
+      declarations: [ DetailedTrekComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataStoreComponent);
+    fixture = TestBed.createComponent(DetailedTrekComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

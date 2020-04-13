@@ -13,7 +13,7 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { RegisterComponent } from './register/register.component';
 import { CreateTrekComponent } from './create-trek/create-trek.component';
 import { FormsModule } from '@angular/forms';
-import { DataStoreComponent } from './data-store/data-store.component';
+import { DetailedTrekComponent } from './detailed-trek/detailed-trek.component';
 
 
 
@@ -25,7 +25,7 @@ import { DataStoreComponent } from './data-store/data-store.component';
     LoginComponentComponent,
     RegisterComponent,
     CreateTrekComponent,
-    DataStoreComponent
+    DetailedTrekComponent,
   ],
   imports: [
     FormsModule,

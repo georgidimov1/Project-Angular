@@ -21,7 +21,7 @@ entities: any;
     this.collection.find()
     .subscribe((entities) => {
      this.entities = entities;
-     this.isArray=this.entities
+     this.isArray=Boolean(this.entities[0])
     }, (error) => {
       console.log(error)
     }, () => {
