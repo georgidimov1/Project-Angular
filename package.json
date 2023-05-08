@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "kinvey-angular-sdk": "^4.2.5",
     "popper.js": "^1.16.1",
     "resolve-url-loader": "^3.1.1",
